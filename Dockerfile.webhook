@@ -5,9 +5,9 @@ RUN apt-get update \
     && update-ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /volume1/docker/Tokscale
+WORKDIR /volume1/docker/nas-webhook
 
-COPY webhook.js /volume1/docker/Tokscale/webhook.js
-COPY merge.js /volume1/docker/Tokscale/merge.js
+COPY webhook.js /volume1/docker/nas-webhook/webhook.js
+COPY merge.js /volume1/docker/nas-webhook/merge.js
 
 CMD ["node", "webhook.js"]

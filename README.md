@@ -32,6 +32,26 @@ The NAS webhook watches those branches, merges them, and writes the result into 
 
    Log in with `auth.guieunuch.cc` if prompted.
 
+The `/local` page also shows webhook trigger history, including:
+
+- when the last webhook fired
+- which machine / branch triggered it
+- who pushed it
+- how many commits were included
+
+That history is sourced from the webhook runtime and written into the merged
+`my-data.json`, so the dashboard and the deployment logs stay aligned.
+
+GitHub webhook Payload URL for this repo:
+
+- `https://webhook.guieunuch.cc/`
+
+Current live deployment notes:
+
+- `nas-webhook` runs on the NAS and receives GitHub push events
+- `tokscale-frontend` serves the production dashboard on port `3000`
+- `/local` is the page to verify merged stats and webhook history
+
 ## Requirements
 
 - Git
