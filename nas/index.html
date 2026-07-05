@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokscale - 自建 Token 統計儀表板</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    .grid-cell {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+    }
+    /* GitHub contribution colors */
+    .bg-level-0 { background-color: #161b22; }
+    .bg-level-1 { background-color: #0e4429; }
+    .bg-level-2 { background-color: #006d32; }
+    .bg-level-3 { background-color: #26a641; }
+    .bg-level-4 { background-color: #39d353; }
+  </style>
+</head>
+<body class="min-h-screen p-6 md:p-12">
+  <div class="max-w-6xl mx-auto">
+    <!-- Header -->
+    <header class="flex justify-between items-center border-b border-gray-800 pb-6 mb-8">
+      <div>
+        <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+          🛰️ Tokscale Dashboard
+        </h1>
+        <p class="text-gray-400 mt-1 text-sm">自建私有化 AI Token 消耗統計</p>
+      </div>
+      <div id="last-update" class="text-xs text-gray-500">
+        正在載入數據...
+      </div>
+    </header>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6">
+        <div class="text-gray-400 text-sm">總消耗 Token</div>
+        <div id="stat-tokens" class="text-3xl font-extrabold text-[#39d353] mt-2">--</div>
+      </div>
+      <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6">
+        <div class="text-gray-400 text-sm">總預估花費 (USD)</div>
+        <div id="stat-cost" class="text-3xl font-extrabold text-blue-400 mt-2">--</div>
+      </div>
+      <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6">
+        <div class="text-gray-400 text-sm">活躍天數 / 記錄天數</div>
+        <div id="stat-days" class="text-3xl font-extrabold text-purple-400 mt-2">--</div>
+      </div>
+    </div>
+
+    <!-- Heatmap Contribution Graph -->
+    <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6 mb-8 overflow-x-auto">
+      <h2 class="text-lg font-semibold text-white mb-4">Token 貢獻圖 (過去一年)</h2>
+      <div class="flex gap-1" id="heatmap-container">
+        <!-- Will be populated by JS -->
+      </div>
+      <div class="flex justify-end items-center gap-2 mt-4 text-xs text-gray-400">
+        <span>Less</span>
+        <div class="grid-cell bg-level-0"></div>
+        <div class="grid-cell bg-level-1"></div>
+        <div class="grid-cell bg-level-2"></div>
+        <div class="grid-cell bg-level-3"></div>
+        <div class="grid-cell bg-level-4"></div>
+        <span>More</span>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6">
+        <h3 class="text-lg font-semibold text-white mb-4">每日 Token 消耗趨勢</h3>
+        <canvas id="tokenChart" class="w-full h-64"></canvas>
+      </div>
+      <div class="bg-[#161b22] border border-gray-800 rounded-lg p-6">
+        <h3 class="text-lg font-semibold text-white mb-4">每日費用趨勢</h3>
+        <canvas id="costChart" class="w-full h-64"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fetch statistics data
+    fetch('./my-data.json')
+      .then(response => {
+        if (!response.ok) throw new Error('無法讀取 my-data.json，請確認檔案已產生。');
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('last-update').innerText = `最後更新時間：${new Date().toLocaleString()}`;
+        renderDashboard(data);
+      })
+      .catch(error => {
+        console.error(error);
+        document.getElementById('last-update').innerHTML = `<span class="text-red-500">${error.message}</span>`;
+      });
+
+    function renderDashboard(data) {
+      const entries = data.entries || [];
+      if (entries.length === 0) return;
+
+      // 1. Calculate stats
+      let totalTokens = 0;
+      let totalCost = 0;
+      let activeDays = 0;
+      const dataMap = {};
+
+      entries.forEach(entry => {
+        totalTokens += entry.tokens || 0;
+        totalCost += entry.cost || 0;
+        if ((entry.tokens || 0) > 0) activeDays++;
+        dataMap[entry.date] = entry;
+      });
+
+      // Update UI cards
+      document.getElementById('stat-tokens').innerText = formatNumber(totalTokens);
+      document.getElementById('stat-cost').innerText = `$${totalCost.toFixed(2)}`;
+      document.getElementById('stat-days').innerText = `${activeDays} / ${entries.length} 天`;
+
+      // 2. Render Heatmap (Past 365 Days)
+      const container = document.getElementById('heatmap-container');
+      const today = new Date();
+      const oneYearAgo = new Date();
+      oneYearAgo.setDate(today.getDate() - 365);
+
+      // Group days by week (53 weeks)
+      let currentWeekHTML = '<div class="flex flex-col gap-1">';
+      let dayCounter = 0;
+
+      for (let d = new Date(oneYearAgo); d <= today; d.setDate(d.getDate() + 1)) {
+        const dateString = d.toISOString().split('T')[0];
+        const entry = dataMap[dateString];
+        const tokens = entry ? entry.tokens : 0;
+        
+        let level = 0;
+        if (tokens > 0 && tokens <= 50000) level = 1;
+        else if (tokens > 50000 && tokens <= 200000) level = 2;
+        else if (tokens > 200000 && tokens <= 1000000) level = 3;
+        else if (tokens > 1000000) level = 4;
+
+        const title = `${dateString}: ${formatNumber(tokens)} tokens ($${entry ? entry.cost.toFixed(4) : '0.00'})`;
+        currentWeekHTML += `<div class="grid-cell bg-level-${level}" title="${title}"></div>`;
+        
+        dayCounter++;
+        if (dayCounter % 7 === 0) {
+          currentWeekHTML += '</div>';
+          container.innerHTML += currentWeekHTML;
+          currentWeekHTML = '<div class="flex flex-col gap-1">';
+        }
+      }
+      if (dayCounter % 7 !== 0) {
+        currentWeekHTML += '</div>';
+        container.innerHTML += currentWeekHTML;
+      }
+
+      // 3. Render Trend Charts (Last 30 entries for readability)
+      const chartEntries = entries.slice(-30);
+      const labels = chartEntries.map(e => e.date.substring(5)); // MM-DD
+      const tokenData = chartEntries.map(e => e.tokens);
+      const costData = chartEntries.map(e => e.cost);
+
+      // Token Chart
+      new Chart(document.getElementById('tokenChart'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Tokens',
+            data: tokenData,
+            borderColor: '#26a641',
+            backgroundColor: 'rgba(38, 166, 65, 0.1)',
+            fill: true,
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { grid: { color: '#1f2937' }, ticks: { color: '#9ca3af' } },
+            x: { grid: { color: '#1f2937' }, ticks: { color: '#9ca3af' } }
+          }
+        }
+      });
+
+      // Cost Chart
+      new Chart(document.getElementById('costChart'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Cost (USD)',
+            data: costData,
+            backgroundColor: '#3b82f6',
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { grid: { color: '#1f2937' }, ticks: { color: '#9ca3af' } },
+            x: { grid: { color: '#1f2937' }, ticks: { color: '#9ca3af' } }
+          }
+        }
+      });
+    }
+
+    function formatNumber(num) {
+      if (num >= 1e9) return (num / 1e9).toFixed(2) + ' B';
+      if (num >= 1e6) return (num / 1e6).toFixed(2) + ' M';
+      if (num >= 1e3) return (num / 1e3).toFixed(2) + ' K';
+      return num;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "name": "tokscale",
+      "host": "webhook.tokscale.guieunuch.cc",
+      "repoFullName": "Akirataiki1989/tokscale-stats",
+      "secretEnv": "GITHUB_WEBHOOK_SECRET",
+      "command": ["node", "merge.js"],
+      "cwd": "/volume1/docker/Tokscale",
+      "maxBodyBytes": 1048576
+    }
+  ]
+}

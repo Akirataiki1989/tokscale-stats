@@ -1,0 +1,10 @@
+#!/bin/sh
+
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+
+echo "=== [Tokscale] Running pre-push sync hook ==="
+
+powershell.exe -ExecutionPolicy Bypass -File "$SCRIPT_DIR/update_stats.ps1"
+
+echo "=== [Tokscale] Hook finished ==="
+exit 0

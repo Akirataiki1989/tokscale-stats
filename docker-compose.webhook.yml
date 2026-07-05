@@ -1,0 +1,15 @@
+name: nas-webhook
+
+services:
+  webhook:
+    build:
+      context: .
+      dockerfile: Dockerfile.webhook
+    image: nas-webhook
+    env_file:
+      - .env
+    volumes:
+      - /volume1/docker/Tokscale:/volume1/docker/Tokscale
+    ports:
+      - "8965:8965"
+    restart: unless-stopped
