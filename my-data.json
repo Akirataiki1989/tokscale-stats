@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-08-09T15:33:14.732632700+00:00",
+    "generatedAt": "2026-08-10T14:41:22.378657+00:00",
     "version": "4.0.10",
     "dateRange": {
       "start": "2025-09-29",
-      "end": "2026-08-09"
+      "end": "2026-08-10"
     }
   },
   "summary": {
-    "totalTokens": 4285715874,
-    "totalCost": 1123.5528653900003,
-    "totalDays": 43,
-    "activeDays": 43,
-    "averagePerDay": 26.129136404418613,
-    "maxCostInSingleDay": 116.74884343000001,
+    "totalTokens": 4195819423,
+    "totalCost": 1091.01939837,
+    "totalDays": 44,
+    "activeDays": 44,
+    "averagePerDay": 24.795895417500002,
+    "maxCostInSingleDay": 116.74884343,
     "clients": [
       "antigravity-cli",
       "claude",
@@ -44,7 +44,7 @@
     {
       "year": "2025",
       "totalTokens": 221459,
-      "totalCost": 0.5234405,
+      "totalCost": 0.5234405000000001,
       "range": {
         "start": "2025-09-29",
         "end": "2025-09-29"
@@ -52,11 +52,11 @@
     },
     {
       "year": "2026",
-      "totalTokens": 4285494415,
-      "totalCost": 1123.0294248900002,
+      "totalTokens": 4195597964,
+      "totalCost": 1090.4959578700002,
       "range": {
         "start": "2026-04-11",
-        "end": "2026-08-09"
+        "end": "2026-08-10"
       }
     }
   ],
@@ -65,7 +65,7 @@
       "date": "2025-09-29",
       "totals": {
         "tokens": 221459,
-        "cost": 0.5234405,
+        "cost": 0.5234405000000001,
         "messages": 16
       },
       "intensity": 1,
@@ -88,7 +88,7 @@
             "cacheWrite": 0,
             "reasoning": 18134
           },
-          "cost": 0.5234405,
+          "cost": 0.5234405000000001,
           "messages": 16
         }
       ],
@@ -98,7 +98,7 @@
       "date": "2026-04-11",
       "totals": {
         "tokens": 3362833,
-        "cost": 2.6906222,
+        "cost": 2.6906222000000004,
         "messages": 48
       },
       "intensity": 1,
@@ -121,7 +121,7 @@
             "cacheWrite": 0,
             "reasoning": 27504
           },
-          "cost": 2.6906222,
+          "cost": 2.6906222000000004,
           "messages": 48
         }
       ],
@@ -131,7 +131,7 @@
       "date": "2026-04-12",
       "totals": {
         "tokens": 80356096,
-        "cost": 9.5821037,
+        "cost": 9.582103700000001,
         "messages": 280
       },
       "intensity": 1,
@@ -154,7 +154,7 @@
             "cacheWrite": 0,
             "reasoning": 53883
           },
-          "cost": 9.5821037,
+          "cost": 9.582103700000001,
           "messages": 280
         }
       ],
@@ -164,7 +164,7 @@
       "date": "2026-04-14",
       "totals": {
         "tokens": 1433355,
-        "cost": 0.230386,
+        "cost": 0.23038599999999998,
         "messages": 29
       },
       "intensity": 1,
@@ -187,7 +187,7 @@
             "cacheWrite": 0,
             "reasoning": 3512
           },
-          "cost": 0.230386,
+          "cost": 0.23038599999999998,
           "messages": 29
         }
       ],
@@ -197,7 +197,7 @@
       "date": "2026-05-12",
       "totals": {
         "tokens": 5741878,
-        "cost": 1.1411057,
+        "cost": 1.1411056999999998,
         "messages": 105
       },
       "intensity": 1,
@@ -220,7 +220,7 @@
             "cacheWrite": 0,
             "reasoning": 20987
           },
-          "cost": 1.1411057,
+          "cost": 1.1411056999999998,
           "messages": 105
         }
       ],
@@ -230,7 +230,7 @@
       "date": "2026-06-13",
       "totals": {
         "tokens": 2259388,
-        "cost": 0.6641336000000001,
+        "cost": 0.6641336,
         "messages": 129
       },
       "intensity": 1,
@@ -267,7 +267,7 @@
             "cacheWrite": 0,
             "reasoning": 20453
           },
-          "cost": 0.6122481000000001,
+          "cost": 0.6122481,
           "messages": 123
         }
       ],
@@ -277,7 +277,7 @@
       "date": "2026-06-14",
       "totals": {
         "tokens": 2053416,
-        "cost": 0.47489724999999994,
+        "cost": 0.47489725,
         "messages": 77
       },
       "intensity": 1,
@@ -289,20 +289,6 @@
         "reasoning": 20166
       },
       "clients": [
-        {
-          "client": "antigravity-cli",
-          "modelId": "gemini-3-flash-preview",
-          "providerId": "google",
-          "tokens": {
-            "input": 151715,
-            "output": 0,
-            "cacheRead": 625962,
-            "cacheWrite": 0,
-            "reasoning": 7985
-          },
-          "cost": 0.1311106,
-          "messages": 24
-        },
         {
           "client": "gemini",
           "modelId": "gemini-3-flash-preview",
@@ -316,6 +302,20 @@
           },
           "cost": 0.34378664999999997,
           "messages": 53
+        },
+        {
+          "client": "antigravity-cli",
+          "modelId": "gemini-3-flash-preview",
+          "providerId": "google",
+          "tokens": {
+            "input": 151715,
+            "output": 0,
+            "cacheRead": 625962,
+            "cacheWrite": 0,
+            "reasoning": 7985
+          },
+          "cost": 0.13111060000000002,
+          "messages": 24
         }
       ],
       "activeTimeMs": 1009182
@@ -390,7 +390,7 @@
       "date": "2026-06-25",
       "totals": {
         "tokens": 12246722,
-        "cost": 5.689806,
+        "cost": 5.689806000000001,
         "messages": 244
       },
       "intensity": 1,
@@ -413,7 +413,7 @@
             "cacheWrite": 0,
             "reasoning": 54713
           },
-          "cost": 1.1973239999999998,
+          "cost": 1.197324,
           "messages": 179
         },
         {
@@ -427,7 +427,7 @@
             "cacheWrite": 0,
             "reasoning": 1838
           },
-          "cost": 4.492482,
+          "cost": 4.492482000000001,
           "messages": 65
         }
       ],
@@ -437,7 +437,7 @@
       "date": "2026-06-27",
       "totals": {
         "tokens": 4609716,
-        "cost": 6.354387,
+        "cost": 6.354386999999999,
         "messages": 116
       },
       "intensity": 1,
@@ -460,7 +460,7 @@
             "cacheWrite": 0,
             "reasoning": 5990
           },
-          "cost": 6.354387,
+          "cost": 6.354386999999999,
           "messages": 116
         }
       ],
@@ -549,18 +549,18 @@
       },
       "clients": [
         {
-          "client": "codex",
-          "modelId": "gpt-5.4-mini",
-          "providerId": "openai",
+          "client": "antigravity-cli",
+          "modelId": "gemini-default",
+          "providerId": "google",
           "tokens": {
-            "input": 458982,
-            "output": 88694,
-            "cacheRead": 8941312,
+            "input": 3692212,
+            "output": 83161,
+            "cacheRead": 21484536,
             "cacheWrite": 0,
-            "reasoning": 61246
+            "reasoning": 83398
           },
-          "cost": 1.6895649,
-          "messages": 110
+          "cost": 9.383132,
+          "messages": 227
         },
         {
           "client": "antigravity-cli",
@@ -587,22 +587,22 @@
             "cacheWrite": 0,
             "reasoning": 2798
           },
-          "cost": 2.4721389999999994,
+          "cost": 2.472139,
           "messages": 38
         },
         {
-          "client": "antigravity-cli",
-          "modelId": "gemini-default",
-          "providerId": "google",
+          "client": "codex",
+          "modelId": "gpt-5.4-mini",
+          "providerId": "openai",
           "tokens": {
-            "input": 3692212,
-            "output": 83161,
-            "cacheRead": 21484536,
+            "input": 458982,
+            "output": 88694,
+            "cacheRead": 8941312,
             "cacheWrite": 0,
-            "reasoning": 83398
+            "reasoning": 61246
           },
-          "cost": 9.383132,
-          "messages": 227
+          "cost": 1.6895649000000001,
+          "messages": 110
         }
       ],
       "activeTimeMs": 11028731
@@ -624,6 +624,20 @@
       },
       "clients": [
         {
+          "client": "codex",
+          "modelId": "gpt-5.4-mini",
+          "providerId": "openai",
+          "tokens": {
+            "input": 1127834,
+            "output": 254865,
+            "cacheRead": 34208000,
+            "cacheWrite": 0,
+            "reasoning": 137306
+          },
+          "cost": 5.176245,
+          "messages": 386
+        },
+        {
           "client": "antigravity-cli",
           "modelId": "gemini-default",
           "providerId": "google",
@@ -636,20 +650,6 @@
           },
           "cost": 2.062718,
           "messages": 57
-        },
-        {
-          "client": "codex",
-          "modelId": "gpt-5.4-mini",
-          "providerId": "openai",
-          "tokens": {
-            "input": 1127834,
-            "output": 254865,
-            "cacheRead": 34208000,
-            "cacheWrite": 0,
-            "reasoning": 137306
-          },
-          "cost": 5.176245000000001,
-          "messages": 386
         }
       ],
       "activeTimeMs": 14687681
@@ -705,7 +705,7 @@
       "date": "2026-07-07",
       "totals": {
         "tokens": 288260,
-        "cost": 0.492248,
+        "cost": 0.49224799999999996,
         "messages": 10
       },
       "intensity": 1,
@@ -728,7 +728,7 @@
             "cacheWrite": 0,
             "reasoning": 390
           },
-          "cost": 0.492248,
+          "cost": 0.49224799999999996,
           "messages": 10
         }
       ],
@@ -737,32 +737,32 @@
     {
       "date": "2026-07-10",
       "totals": {
-        "tokens": 200529658,
-        "cost": 39.91651534,
-        "messages": 928
+        "tokens": 101269198,
+        "cost": 12.995140039999997,
+        "messages": 594
       },
-      "intensity": 2,
+      "intensity": 1,
       "tokenBreakdown": {
-        "input": 8097934,
-        "output": 462504,
-        "cacheRead": 189919223,
-        "cacheWrite": 1859774,
+        "input": 7918517,
+        "output": 158291,
+        "cacheRead": 93002167,
+        "cacheWrite": 0,
         "reasoning": 190223
       },
       "clients": [
         {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
+          "client": "antigravity-cli",
+          "modelId": "gemini-default",
+          "providerId": "google",
           "tokens": {
-            "input": 114207,
-            "output": 284380,
-            "cacheRead": 95476907,
-            "cacheWrite": 1696538,
-            "reasoning": 0
+            "input": 4633898,
+            "output": 82571,
+            "cacheRead": 76649655,
+            "cacheWrite": 0,
+            "reasoning": 178028
           },
-          "cost": 26.4089404,
-          "messages": 295
+          "cost": 12.394983999999997,
+          "messages": 472
         },
         {
           "client": "codex",
@@ -789,84 +789,28 @@
             "cacheWrite": 0,
             "reasoning": 11679
           },
-          "cost": 0.5385782399999998,
+          "cost": 0.5385782399999999,
           "messages": 121
-        },
-        {
-          "client": "antigravity-cli",
-          "modelId": "gemini-default",
-          "providerId": "google",
-          "tokens": {
-            "input": 4633898,
-            "output": 82571,
-            "cacheRead": 76649655,
-            "cacheWrite": 0,
-            "reasoning": 178028
-          },
-          "cost": 12.394983999999997,
-          "messages": 472
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 65210,
-            "output": 19833,
-            "cacheRead": 1440149,
-            "cacheWrite": 163236,
-            "reasoning": 0
-          },
-          "cost": 0.5124349,
-          "messages": 39
         }
       ],
-      "activeTimeMs": 13113765
+      "activeTimeMs": 8064129
     },
     {
       "date": "2026-07-11",
       "totals": {
-        "tokens": 177149931,
-        "cost": 44.15382094,
-        "messages": 1174
+        "tokens": 131922494,
+        "cost": 29.897735240000003,
+        "messages": 941
       },
       "intensity": 2,
       "tokenBreakdown": {
-        "input": 6825639,
-        "output": 732574,
-        "cacheRead": 166962106,
-        "cacheWrite": 2592002,
+        "input": 6544373,
+        "output": 416849,
+        "cacheRead": 123239054,
+        "cacheWrite": 1684608,
         "reasoning": 37610
       },
       "clients": [
-        {
-          "client": "codex",
-          "modelId": "gpt-5.6-luna",
-          "providerId": "openai",
-          "tokens": {
-            "input": 5890739,
-            "output": 195504,
-            "cacheRead": 90996224,
-            "cacheWrite": 0,
-            "reasoning": 35541
-          },
-          "cost": 1.6376631399999995,
-          "messages": 662
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 176379,
-            "output": 54153,
-            "cacheRead": 5921044,
-            "cacheWrite": 409700,
-            "reasoning": 0
-          },
-          "cost": 1.5513734000000003,
-          "messages": 101
-        },
         {
           "client": "antigravity-cli",
           "modelId": "gemini-3.1-pro",
@@ -882,6 +826,34 @@
           "messages": 1
         },
         {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 123687,
+            "output": 153111,
+            "cacheRead": 18520368,
+            "cacheWrite": 895814,
+            "reasoning": 0
+          },
+          "cost": 7.7220926,
+          "messages": 143
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 94108,
+            "output": 36841,
+            "cacheRead": 5084087,
+            "cacheWrite": 230288,
+            "reasoning": 0
+          },
+          "cost": 1.0745817,
+          "messages": 77
+        },
+        {
           "client": "codex",
           "modelId": "gpt-5.6-terra",
           "providerId": "openai",
@@ -892,22 +864,8 @@
             "cacheWrite": 0,
             "reasoning": 708
           },
-          "cost": 0.21815180000000003,
+          "cost": 0.21815179999999998,
           "messages": 9
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 322682,
-            "output": 451524,
-            "cacheRead": 61406463,
-            "cacheWrite": 1623796,
-            "reasoning": 0
-          },
-          "cost": 21.5013866,
-          "messages": 352
         },
         {
           "client": "claude",
@@ -920,11 +878,25 @@
             "cacheWrite": 558506,
             "reasoning": 0
           },
-          "cost": 19.166371999999996,
+          "cost": 19.166372,
           "messages": 49
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-luna",
+          "providerId": "openai",
+          "tokens": {
+            "input": 5890739,
+            "output": 195504,
+            "cacheRead": 90996224,
+            "cacheWrite": 0,
+            "reasoning": 35541
+          },
+          "cost": 1.63766314,
+          "messages": 662
         }
       ],
-      "activeTimeMs": 28369616
+      "activeTimeMs": 21888079
     },
     {
       "date": "2026-07-12",
@@ -944,17 +916,31 @@
       "clients": [
         {
           "client": "codex",
-          "modelId": "gpt-5.6-terra",
+          "modelId": "gpt-5.6-luna",
           "providerId": "openai",
           "tokens": {
-            "input": 160281,
-            "output": 15656,
-            "cacheRead": 4503808,
+            "input": 831620,
+            "output": 73186,
+            "cacheRead": 62202624,
             "cacheWrite": 0,
-            "reasoning": 5961
+            "reasoning": 18515
           },
-          "cost": 0.7403638,
-          "messages": 53
+          "cost": 0.76020884,
+          "messages": 310
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.4-mini",
+          "providerId": "openai",
+          "tokens": {
+            "input": 248305,
+            "output": 24201,
+            "cacheRead": 2088832,
+            "cacheWrite": 0,
+            "reasoning": 14431
+          },
+          "cost": 0.51673515,
+          "messages": 41
         },
         {
           "client": "claude",
@@ -986,20 +972,6 @@
         },
         {
           "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 45235,
-            "output": 47465,
-            "cacheRead": 6135242,
-            "cacheWrite": 210325,
-            "reasoning": 0
-          },
-          "cost": 1.1589904500000001,
-          "messages": 74
-        },
-        {
-          "client": "claude",
           "modelId": "claude-fable-5",
           "providerId": "anthropic",
           "tokens": {
@@ -1013,32 +985,32 @@
           "messages": 80
         },
         {
-          "client": "codex",
-          "modelId": "gpt-5.4-mini",
-          "providerId": "openai",
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
           "tokens": {
-            "input": 248305,
-            "output": 24201,
-            "cacheRead": 2088832,
-            "cacheWrite": 0,
-            "reasoning": 14431
+            "input": 45235,
+            "output": 47465,
+            "cacheRead": 6135242,
+            "cacheWrite": 210325,
+            "reasoning": 0
           },
-          "cost": 0.51673515,
-          "messages": 41
+          "cost": 1.1589904500000001,
+          "messages": 74
         },
         {
           "client": "codex",
-          "modelId": "gpt-5.6-luna",
+          "modelId": "gpt-5.6-terra",
           "providerId": "openai",
           "tokens": {
-            "input": 831620,
-            "output": 73186,
-            "cacheRead": 62202624,
+            "input": 160281,
+            "output": 15656,
+            "cacheRead": 4503808,
             "cacheWrite": 0,
-            "reasoning": 18515
+            "reasoning": 5961
           },
-          "cost": 0.76020884,
-          "messages": 310
+          "cost": 0.7403638000000001,
+          "messages": 53
         }
       ],
       "activeTimeMs": 23122936
@@ -1047,7 +1019,7 @@
       "date": "2026-07-13",
       "totals": {
         "tokens": 142899880,
-        "cost": 30.87213915,
+        "cost": 30.872139150000002,
         "messages": 895
       },
       "intensity": 2,
@@ -1070,22 +1042,22 @@
             "cacheWrite": 0,
             "reasoning": 3774
           },
-          "cost": 0.10365340000000002,
+          "cost": 0.10365339999999999,
           "messages": 119
         },
         {
-          "client": "codex",
-          "modelId": "gpt-5.4-mini",
-          "providerId": "openai",
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
           "tokens": {
-            "input": 2117767,
-            "output": 115773,
-            "cacheRead": 26225024,
-            "cacheWrite": 0,
-            "reasoning": 29232
+            "input": 234990,
+            "output": 84644,
+            "cacheRead": 10957409,
+            "cacheWrite": 653554,
+            "reasoning": 0
           },
-          "cost": 4.207724550000001,
-          "messages": 265
+          "cost": 2.5708934000000006,
+          "messages": 188
         },
         {
           "client": "claude",
@@ -1098,7 +1070,7 @@
             "cacheWrite": 610626,
             "reasoning": 0
           },
-          "cost": 23.822810399999998,
+          "cost": 23.8228104,
           "messages": 314
         },
         {
@@ -1116,18 +1088,18 @@
           "messages": 9
         },
         {
-          "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
+          "client": "codex",
+          "modelId": "gpt-5.4-mini",
+          "providerId": "openai",
           "tokens": {
-            "input": 234990,
-            "output": 84644,
-            "cacheRead": 10957409,
-            "cacheWrite": 653554,
-            "reasoning": 0
+            "input": 2117767,
+            "output": 115773,
+            "cacheRead": 26225024,
+            "cacheWrite": 0,
+            "reasoning": 29232
           },
-          "cost": 2.5708934,
-          "messages": 188
+          "cost": 4.20772455,
+          "messages": 265
         }
       ],
       "activeTimeMs": 16228529
@@ -1136,7 +1108,7 @@
       "date": "2026-07-14",
       "totals": {
         "tokens": 99871024,
-        "cost": 22.61384016,
+        "cost": 22.613840159999995,
         "messages": 501
       },
       "intensity": 1,
@@ -1211,7 +1183,7 @@
       "date": "2026-07-18",
       "totals": {
         "tokens": 157354388,
-        "cost": 36.33924322000001,
+        "cost": 36.33924322,
         "messages": 687
       },
       "intensity": 2,
@@ -1224,18 +1196,18 @@
       },
       "clients": [
         {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
           "tokens": {
-            "input": 157561,
-            "output": 394392,
-            "cacheRead": 130277665,
-            "cacheWrite": 1316700,
-            "reasoning": 0
+            "input": 95625,
+            "output": 4314,
+            "cacheRead": 363520,
+            "cacheWrite": 0,
+            "reasoning": 2112
           },
-          "cost": 33.606325,
-          "messages": 426
+          "cost": 0.17053299999999996,
+          "messages": 10
         },
         {
           "client": "codex",
@@ -1248,7 +1220,7 @@
             "cacheWrite": 0,
             "reasoning": 9503
           },
-          "cost": 0.24122162000000008,
+          "cost": 0.24122162000000003,
           "messages": 95
         },
         {
@@ -1262,22 +1234,22 @@
             "cacheWrite": 667314,
             "reasoning": 0
           },
-          "cost": 2.3211635999999998,
+          "cost": 2.3211636,
           "messages": 156
         },
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-terra",
-          "providerId": "openai",
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
           "tokens": {
-            "input": 95625,
-            "output": 4314,
-            "cacheRead": 363520,
-            "cacheWrite": 0,
-            "reasoning": 2112
+            "input": 157561,
+            "output": 394392,
+            "cacheRead": 130277665,
+            "cacheWrite": 1316700,
+            "reasoning": 0
           },
-          "cost": 0.170533,
-          "messages": 10
+          "cost": 33.606325,
+          "messages": 426
         }
       ],
       "activeTimeMs": 13820005
@@ -1299,62 +1271,6 @@
       },
       "clients": [
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-luna",
-          "providerId": "openai",
-          "tokens": {
-            "input": 2495078,
-            "output": 111629,
-            "cacheRead": 45155328,
-            "cacheWrite": 0,
-            "reasoning": 22079
-          },
-          "cost": 0.7812858799999999,
-          "messages": 389
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 252198,
-            "output": 715603,
-            "cacheRead": 330781806,
-            "cacheWrite": 1375048,
-            "reasoning": 0
-          },
-          "cost": 77.25440719999999,
-          "messages": 767
-        },
-        {
-          "client": "codex",
-          "modelId": "gpt-5.6-terra",
-          "providerId": "openai",
-          "tokens": {
-            "input": 400890,
-            "output": 22246,
-            "cacheRead": 3770368,
-            "cacheWrite": 0,
-            "reasoning": 8735
-          },
-          "cost": 0.9638128000000001,
-          "messages": 56
-        },
-        {
-          "client": "codex",
-          "modelId": "gpt-5.6-sol",
-          "providerId": "openai",
-          "tokens": {
-            "input": 64544,
-            "output": 7192,
-            "cacheRead": 405248,
-            "cacheWrite": 0,
-            "reasoning": 1756
-          },
-          "cost": 0.793784,
-          "messages": 13
-        },
-        {
           "client": "claude",
           "modelId": "claude-haiku-4-5",
           "providerId": "anthropic",
@@ -1367,6 +1283,62 @@
           },
           "cost": 2.1986876,
           "messages": 167
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
+          "tokens": {
+            "input": 400890,
+            "output": 22246,
+            "cacheRead": 3770368,
+            "cacheWrite": 0,
+            "reasoning": 8735
+          },
+          "cost": 0.9638128,
+          "messages": 56
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 252198,
+            "output": 715603,
+            "cacheRead": 330781806,
+            "cacheWrite": 1375048,
+            "reasoning": 0
+          },
+          "cost": 77.2544072,
+          "messages": 767
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-luna",
+          "providerId": "openai",
+          "tokens": {
+            "input": 2495078,
+            "output": 111629,
+            "cacheRead": 45155328,
+            "cacheWrite": 0,
+            "reasoning": 22079
+          },
+          "cost": 0.78128588,
+          "messages": 389
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-sol",
+          "providerId": "openai",
+          "tokens": {
+            "input": 64544,
+            "output": 7192,
+            "cacheRead": 405248,
+            "cacheWrite": 0,
+            "reasoning": 1756
+          },
+          "cost": 0.7937839999999998,
+          "messages": 13
         }
       ],
       "activeTimeMs": 27238284
@@ -1375,7 +1347,7 @@
       "date": "2026-07-20",
       "totals": {
         "tokens": 130356827,
-        "cost": 25.634251149999997,
+        "cost": 25.63425115,
         "messages": 585
       },
       "intensity": 1,
@@ -1388,20 +1360,6 @@
       },
       "clients": [
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-luna",
-          "providerId": "openai",
-          "tokens": {
-            "input": 694751,
-            "output": 51671,
-            "cacheRead": 24435200,
-            "cacheWrite": 0,
-            "reasoning": 12909
-          },
-          "cost": 0.3525751,
-          "messages": 210
-        },
-        {
           "client": "claude",
           "modelId": "claude-haiku-4-5",
           "providerId": "anthropic",
@@ -1412,7 +1370,7 @@
             "cacheWrite": 144597,
             "reasoning": 0
           },
-          "cost": 0.5699296500000001,
+          "cost": 0.5699296500000002,
           "messages": 55
         },
         {
@@ -1426,8 +1384,22 @@
             "cacheWrite": 628532,
             "reasoning": 0
           },
-          "cost": 24.711746399999996,
+          "cost": 24.711746400000003,
           "messages": 320
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-luna",
+          "providerId": "openai",
+          "tokens": {
+            "input": 694751,
+            "output": 51671,
+            "cacheRead": 24435200,
+            "cacheWrite": 0,
+            "reasoning": 12909
+          },
+          "cost": 0.3525751,
+          "messages": 210
         }
       ],
       "activeTimeMs": 13310309
@@ -1459,7 +1431,7 @@
             "cacheWrite": 0,
             "reasoning": 2394
           },
-          "cost": 1.1824990000000002,
+          "cost": 1.1824990000000004,
           "messages": 24
         },
         {
@@ -1487,7 +1459,7 @@
             "cacheWrite": 0,
             "reasoning": 5693
           },
-          "cost": 0.16748103999999997,
+          "cost": 0.16748104,
           "messages": 80
         }
       ],
@@ -1497,7 +1469,7 @@
       "date": "2026-07-22",
       "totals": {
         "tokens": 11571756,
-        "cost": 3.1497418199999996,
+        "cost": 3.14974182,
         "messages": 131
       },
       "intensity": 1,
@@ -1520,7 +1492,7 @@
             "cacheWrite": 0,
             "reasoning": 2742
           },
-          "cost": 0.02533672,
+          "cost": 0.025336720000000004,
           "messages": 23
         },
         {
@@ -1534,7 +1506,7 @@
             "cacheWrite": 148480,
             "reasoning": 0
           },
-          "cost": 2.6422904,
+          "cost": 2.6422904000000003,
           "messages": 73
         },
         {
@@ -1558,7 +1530,7 @@
       "date": "2026-07-23",
       "totals": {
         "tokens": 84429415,
-        "cost": 18.69454443,
+        "cost": 18.694544429999997,
         "messages": 373
       },
       "intensity": 1,
@@ -1572,17 +1544,17 @@
       "clients": [
         {
           "client": "claude",
-          "modelId": "claude-haiku-4-5",
+          "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
           "tokens": {
-            "input": 18205,
-            "output": 4858,
-            "cacheRead": 433680,
-            "cacheWrite": 54439,
+            "input": 93312,
+            "output": 232317,
+            "cacheRead": 72930833,
+            "cacheWrite": 426979,
             "reasoning": 0
           },
-          "cost": 0.15391175,
-          "messages": 10
+          "cost": 18.163408099999998,
+          "messages": 276
         },
         {
           "client": "codex",
@@ -1614,17 +1586,17 @@
         },
         {
           "client": "claude",
-          "modelId": "claude-sonnet-5",
+          "modelId": "claude-haiku-4-5",
           "providerId": "anthropic",
           "tokens": {
-            "input": 93312,
-            "output": 232317,
-            "cacheRead": 72930833,
-            "cacheWrite": 426979,
+            "input": 18205,
+            "output": 4858,
+            "cacheRead": 433680,
+            "cacheWrite": 54439,
             "reasoning": 0
           },
-          "cost": 18.1634081,
-          "messages": 276
+          "cost": 0.15391174999999996,
+          "messages": 10
         }
       ],
       "activeTimeMs": 8324755
@@ -1633,7 +1605,7 @@
       "date": "2026-07-25",
       "totals": {
         "tokens": 239296568,
-        "cost": 57.46669435000001,
+        "cost": 57.46669435,
         "messages": 914
       },
       "intensity": 2,
@@ -1645,6 +1617,20 @@
         "reasoning": 13884
       },
       "clients": [
+        {
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 148150,
+            "output": 83371,
+            "cacheRead": 21067030,
+            "cacheWrite": 578311,
+            "reasoning": 0
+          },
+          "cost": 3.3945967500000003,
+          "messages": 298
+        },
         {
           "client": "codex",
           "modelId": "gpt-5.6-terra",
@@ -1670,22 +1656,8 @@
             "cacheWrite": 1934806,
             "reasoning": 0
           },
-          "cost": 52.042355400000005,
+          "cost": 52.04235539999999,
           "messages": 508
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 148150,
-            "output": 83371,
-            "cacheRead": 21067030,
-            "cacheWrite": 578311,
-            "reasoning": 0
-          },
-          "cost": 3.39459675,
-          "messages": 298
         }
       ],
       "activeTimeMs": 17293314
@@ -1694,7 +1666,7 @@
       "date": "2026-07-26",
       "totals": {
         "tokens": 156582628,
-        "cost": 29.79757174,
+        "cost": 29.797571739999995,
         "messages": 688
       },
       "intensity": 2,
@@ -1708,17 +1680,17 @@
       "clients": [
         {
           "client": "codex",
-          "modelId": "gpt-5.6-luna",
+          "modelId": "gpt-5.5",
           "providerId": "openai",
           "tokens": {
-            "input": 871358,
-            "output": 87363,
-            "cacheRead": 40890624,
+            "input": 121161,
+            "output": 8867,
+            "cacheRead": 995584,
             "cacheWrite": 0,
-            "reasoning": 25903
+            "reasoning": 2115
           },
-          "cost": 0.5640016400000001,
-          "messages": 304
+          "cost": 1.433057,
+          "messages": 22
         },
         {
           "client": "claude",
@@ -1731,36 +1703,22 @@
             "cacheWrite": 676371,
             "reasoning": 0
           },
-          "cost": 27.6034993,
+          "cost": 27.603499299999996,
           "messages": 342
         },
         {
-          "client": "claude",
-          "modelId": "<synthetic>",
-          "providerId": "unknown",
-          "tokens": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "reasoning": 0
-          },
-          "cost": 0.0,
-          "messages": 1
-        },
-        {
           "client": "codex",
-          "modelId": "gpt-5.5",
+          "modelId": "gpt-5.6-luna",
           "providerId": "openai",
           "tokens": {
-            "input": 121161,
-            "output": 8867,
-            "cacheRead": 995584,
+            "input": 871358,
+            "output": 87363,
+            "cacheRead": 40890624,
             "cacheWrite": 0,
-            "reasoning": 2115
+            "reasoning": 25903
           },
-          "cost": 1.4330569999999998,
-          "messages": 22
+          "cost": 0.56400164,
+          "messages": 304
         },
         {
           "client": "codex",
@@ -1775,6 +1733,20 @@
           },
           "cost": 0.1970138,
           "messages": 19
+        },
+        {
+          "client": "claude",
+          "modelId": "<synthetic>",
+          "providerId": "unknown",
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 0.0,
+          "messages": 1
         }
       ],
       "activeTimeMs": 14403783
@@ -1830,7 +1802,7 @@
       "date": "2026-07-28",
       "totals": {
         "tokens": 68869103,
-        "cost": 13.79545796,
+        "cost": 13.795457959999997,
         "messages": 466
       },
       "intensity": 1,
@@ -1842,6 +1814,20 @@
         "reasoning": 56434
       },
       "clients": [
+        {
+          "client": "codex",
+          "modelId": "gpt-5.5",
+          "providerId": "openai",
+          "tokens": {
+            "input": 152871,
+            "output": 13991,
+            "cacheRead": 1796480,
+            "cacheWrite": 0,
+            "reasoning": 2178
+          },
+          "cost": 2.147665,
+          "messages": 33
+        },
         {
           "client": "codex",
           "modelId": "gpt-5.6-luna",
@@ -1871,20 +1857,6 @@
           "messages": 40
         },
         {
-          "client": "codex",
-          "modelId": "gpt-5.5",
-          "providerId": "openai",
-          "tokens": {
-            "input": 152871,
-            "output": 13991,
-            "cacheRead": 1796480,
-            "cacheWrite": 0,
-            "reasoning": 2178
-          },
-          "cost": 2.147665,
-          "messages": 33
-        },
-        {
           "client": "claude",
           "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
@@ -1895,7 +1867,7 @@
             "cacheWrite": 316261,
             "reasoning": 0
           },
-          "cost": 10.7626531,
+          "cost": 10.762653099999998,
           "messages": 192
         }
       ],
@@ -1938,7 +1910,7 @@
       "date": "2026-07-30",
       "totals": {
         "tokens": 171882971,
-        "cost": 53.79618177999998,
+        "cost": 53.79618178,
         "messages": 570
       },
       "intensity": 2,
@@ -1951,6 +1923,20 @@
       },
       "clients": [
         {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 141668,
+            "output": 428111,
+            "cacheRead": 139113139,
+            "cacheWrite": 1499875,
+            "reasoning": 0
+          },
+          "cost": 36.136761299999996,
+          "messages": 333
+        },
+        {
           "client": "codex",
           "modelId": "gpt-5.6-luna",
           "providerId": "openai",
@@ -1961,7 +1947,7 @@
             "cacheWrite": 0,
             "reasoning": 7997
           },
-          "cost": 0.13416967999999999,
+          "cost": 0.13416968,
           "messages": 44
         },
         {
@@ -1989,22 +1975,8 @@
             "cacheWrite": 0,
             "reasoning": 10035
           },
-          "cost": 1.3923398,
+          "cost": 1.3923397999999996,
           "messages": 60
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 141668,
-            "output": 428111,
-            "cacheRead": 139113139,
-            "cacheWrite": 1499875,
-            "reasoning": 0
-          },
-          "cost": 36.13676129999999,
-          "messages": 333
         }
       ],
       "activeTimeMs": 12902886
@@ -2013,7 +1985,7 @@
       "date": "2026-07-31",
       "totals": {
         "tokens": 53797797,
-        "cost": 12.31899848,
+        "cost": 12.318998479999998,
         "messages": 314
       },
       "intensity": 1,
@@ -2036,7 +2008,7 @@
             "cacheWrite": 0,
             "reasoning": 10600
           },
-          "cost": 0.16866928,
+          "cost": 0.16866928000000003,
           "messages": 105
         },
         {
@@ -2050,7 +2022,7 @@
             "cacheWrite": 414088,
             "reasoning": 0
           },
-          "cost": 11.1220956,
+          "cost": 11.122095599999998,
           "messages": 159
         },
         {
@@ -2087,20 +2059,6 @@
       },
       "clients": [
         {
-          "client": "claude",
-          "modelId": "<synthetic>",
-          "providerId": "unknown",
-          "tokens": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "reasoning": 0
-          },
-          "cost": 0.0,
-          "messages": 3
-        },
-        {
           "client": "codex",
           "modelId": "gpt-5.6-luna",
           "providerId": "openai",
@@ -2116,17 +2074,17 @@
         },
         {
           "client": "claude",
-          "modelId": "claude-haiku-4-5",
-          "providerId": "anthropic",
+          "modelId": "<synthetic>",
+          "providerId": "unknown",
           "tokens": {
-            "input": 12419,
-            "output": 19952,
-            "cacheRead": 895019,
-            "cacheWrite": 140032,
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
             "reasoning": 0
           },
-          "cost": 0.3767209,
-          "messages": 24
+          "cost": 0.0,
+          "messages": 3
         },
         {
           "client": "codex",
@@ -2139,7 +2097,7 @@
             "cacheWrite": 0,
             "reasoning": 44962
           },
-          "cost": 2.4597048,
+          "cost": 2.4597048000000004,
           "messages": 140
         },
         {
@@ -2155,6 +2113,20 @@
           },
           "cost": 79.7532642,
           "messages": 821
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 12419,
+            "output": 19952,
+            "cacheRead": 895019,
+            "cacheWrite": 140032,
+            "reasoning": 0
+          },
+          "cost": 0.3767209,
+          "messages": 24
         }
       ],
       "activeTimeMs": 32594444
@@ -2163,7 +2135,7 @@
       "date": "2026-08-02",
       "totals": {
         "tokens": 292126703,
-        "cost": 116.74884343000001,
+        "cost": 116.74884343,
         "messages": 1366
       },
       "intensity": 4,
@@ -2177,17 +2149,17 @@
       "clients": [
         {
           "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
+          "modelId": "<synthetic>",
+          "providerId": "unknown",
           "tokens": {
-            "input": 21971,
-            "output": 49662,
-            "cacheRead": 5569475,
-            "cacheWrite": 134992,
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
             "reasoning": 0
           },
-          "cost": 1.991937,
-          "messages": 53
+          "cost": 0.0,
+          "messages": 1
         },
         {
           "client": "codex",
@@ -2202,20 +2174,6 @@
           },
           "cost": 1.11844668,
           "messages": 654
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-opus-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 123976,
-            "output": 482259,
-            "cacheRead": 185637627,
-            "cacheWrite": 744641,
-            "reasoning": 0
-          },
-          "cost": 110.14917475000001,
-          "messages": 427
         },
         {
           "client": "codex",
@@ -2233,20 +2191,6 @@
         },
         {
           "client": "claude",
-          "modelId": "<synthetic>",
-          "providerId": "unknown",
-          "tokens": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "reasoning": 0
-          },
-          "cost": 0.0,
-          "messages": 1
-        },
-        {
-          "client": "claude",
           "modelId": "claude-haiku-4-5",
           "providerId": "anthropic",
           "tokens": {
@@ -2258,6 +2202,34 @@
           },
           "cost": 2.0747852,
           "messages": 167
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-opus-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 123976,
+            "output": 482259,
+            "cacheRead": 185637627,
+            "cacheWrite": 744641,
+            "reasoning": 0
+          },
+          "cost": 110.14917474999999,
+          "messages": 427
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 21971,
+            "output": 49662,
+            "cacheRead": 5569475,
+            "cacheWrite": 134992,
+            "reasoning": 0
+          },
+          "cost": 1.9919370000000003,
+          "messages": 53
         }
       ],
       "activeTimeMs": 30039303
@@ -2266,7 +2238,7 @@
       "date": "2026-08-03",
       "totals": {
         "tokens": 97701431,
-        "cost": 26.811221099999997,
+        "cost": 26.8112211,
         "messages": 329
       },
       "intensity": 1,
@@ -2278,6 +2250,34 @@
         "reasoning": 16229
       },
       "clients": [
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
+          "tokens": {
+            "input": 183976,
+            "output": 30406,
+            "cacheRead": 3864832,
+            "cacheWrite": 0,
+            "reasoning": 16229
+          },
+          "cost": 0.8502692000000002,
+          "messages": 39
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 114052,
+            "output": 189245,
+            "cacheRead": 88023882,
+            "cacheWrite": 513087,
+            "reasoning": 0
+          },
+          "cost": 21.0080479,
+          "messages": 248
+        },
         {
           "client": "claude",
           "modelId": "claude-opus-5",
@@ -2291,34 +2291,6 @@
           },
           "cost": 4.952904,
           "messages": 42
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 114052,
-            "output": 189245,
-            "cacheRead": 88023882,
-            "cacheWrite": 513087,
-            "reasoning": 0
-          },
-          "cost": 21.008047899999998,
-          "messages": 248
-        },
-        {
-          "client": "codex",
-          "modelId": "gpt-5.6-terra",
-          "providerId": "openai",
-          "tokens": {
-            "input": 183976,
-            "output": 30406,
-            "cacheRead": 3864832,
-            "cacheWrite": 0,
-            "reasoning": 16229
-          },
-          "cost": 0.8502692000000001,
-          "messages": 39
         }
       ],
       "activeTimeMs": 6993675
@@ -2340,20 +2312,6 @@
       },
       "clients": [
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-terra",
-          "providerId": "openai",
-          "tokens": {
-            "input": 1402342,
-            "output": 92400,
-            "cacheRead": 28268800,
-            "cacheWrite": 0,
-            "reasoning": 21364
-          },
-          "cost": 4.911806,
-          "messages": 319
-        },
-        {
           "client": "claude",
           "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
@@ -2366,6 +2324,20 @@
           },
           "cost": 5.1044707,
           "messages": 106
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
+          "tokens": {
+            "input": 1402342,
+            "output": 92400,
+            "cacheRead": 28268800,
+            "cacheWrite": 0,
+            "reasoning": 21364
+          },
+          "cost": 4.911806,
+          "messages": 319
         }
       ],
       "activeTimeMs": 6884623
@@ -2387,6 +2359,20 @@
       },
       "clients": [
         {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 37640,
+            "output": 58187,
+            "cacheRead": 8963886,
+            "cacheWrite": 145485,
+            "reasoning": 0
+          },
+          "cost": 2.8136396999999995,
+          "messages": 72
+        },
+        {
           "client": "codex",
           "modelId": "gpt-5.6-terra",
           "providerId": "openai",
@@ -2399,20 +2385,6 @@
           },
           "cost": 0.027384,
           "messages": 3
-        },
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 37640,
-            "output": 58187,
-            "cacheRead": 8963886,
-            "cacheWrite": 145485,
-            "reasoning": 0
-          },
-          "cost": 2.8136397,
-          "messages": 72
         },
         {
           "client": "claude",
@@ -2435,7 +2407,7 @@
       "date": "2026-08-07",
       "totals": {
         "tokens": 95844256,
-        "cost": 25.612242900000002,
+        "cost": 25.6122429,
         "messages": 337
       },
       "intensity": 1,
@@ -2448,20 +2420,6 @@
       },
       "clients": [
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-terra",
-          "providerId": "openai",
-          "tokens": {
-            "input": 352458,
-            "output": 37482,
-            "cacheRead": 6287360,
-            "cacheWrite": 0,
-            "reasoning": 16559
-          },
-          "cost": 1.30544,
-          "messages": 64
-        },
-        {
           "client": "claude",
           "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
@@ -2472,8 +2430,22 @@
             "cacheWrite": 901725,
             "reasoning": 0
           },
-          "cost": 24.3068029,
+          "cost": 24.306802899999997,
           "messages": 273
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
+          "tokens": {
+            "input": 352458,
+            "output": 37482,
+            "cacheRead": 6287360,
+            "cacheWrite": 0,
+            "reasoning": 16559
+          },
+          "cost": 1.3054400000000002,
+          "messages": 64
         }
       ],
       "activeTimeMs": 8369060
@@ -2482,7 +2454,7 @@
       "date": "2026-08-08",
       "totals": {
         "tokens": 381658251,
-        "cost": 116.01780183,
+        "cost": 116.01780183000001,
         "messages": 1844
       },
       "intensity": 4,
@@ -2507,6 +2479,34 @@
           },
           "cost": 0.5185653800000001,
           "messages": 232
+        },
+        {
+          "client": "claude",
+          "modelId": "<synthetic>",
+          "providerId": "unknown",
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 0.0,
+          "messages": 3
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-opus-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 82474,
+            "output": 221902,
+            "cacheRead": 90754420,
+            "cacheWrite": 515460,
+            "reasoning": 0
+          },
+          "cost": 54.55875499999999,
+          "messages": 253
         },
         {
           "client": "codex",
@@ -2537,20 +2537,6 @@
           "messages": 648
         },
         {
-          "client": "codex",
-          "modelId": "gpt-5.6-sol",
-          "providerId": "openai",
-          "tokens": {
-            "input": 388780,
-            "output": 36756,
-            "cacheRead": 4733440,
-            "cacheWrite": 0,
-            "reasoning": 8172
-          },
-          "cost": 5.658460000000001,
-          "messages": 54
-        },
-        {
           "client": "claude",
           "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
@@ -2565,32 +2551,18 @@
           "messages": 434
         },
         {
-          "client": "claude",
-          "modelId": "claude-opus-5",
-          "providerId": "anthropic",
+          "client": "codex",
+          "modelId": "gpt-5.6-sol",
+          "providerId": "openai",
           "tokens": {
-            "input": 82474,
-            "output": 221902,
-            "cacheRead": 90754420,
-            "cacheWrite": 515460,
-            "reasoning": 0
-          },
-          "cost": 54.558755,
-          "messages": 253
-        },
-        {
-          "client": "claude",
-          "modelId": "<synthetic>",
-          "providerId": "unknown",
-          "tokens": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
+            "input": 388780,
+            "output": 36756,
+            "cacheRead": 4733440,
             "cacheWrite": 0,
-            "reasoning": 0
+            "reasoning": 8172
           },
-          "cost": 0.0,
-          "messages": 3
+          "cost": 5.658460000000001,
+          "messages": 54
         }
       ],
       "activeTimeMs": 32668769
@@ -2598,33 +2570,19 @@
     {
       "date": "2026-08-09",
       "totals": {
-        "tokens": 371007067,
-        "cost": 107.73165189999999,
-        "messages": 1171
+        "tokens": 371300433,
+        "cost": 107.79617069999999,
+        "messages": 1172
       },
       "intensity": 4,
       "tokenBreakdown": {
-        "input": 1682616,
-        "output": 974590,
-        "cacheRead": 364856910,
-        "cacheWrite": 3432363,
+        "input": 1682867,
+        "output": 974717,
+        "cacheRead": 365148094,
+        "cacheWrite": 3434167,
         "reasoning": 60588
       },
       "clients": [
-        {
-          "client": "claude",
-          "modelId": "claude-sonnet-5",
-          "providerId": "anthropic",
-          "tokens": {
-            "input": 287350,
-            "output": 623058,
-            "cacheRead": 249167985,
-            "cacheWrite": 2485589,
-            "reasoning": 0
-          },
-          "cost": 62.8528495,
-          "messages": 533
-        },
         {
           "client": "claude",
           "modelId": "claude-opus-5",
@@ -2636,22 +2594,22 @@
             "cacheWrite": 126182,
             "reasoning": 0
           },
-          "cost": 35.6439555,
+          "cost": 35.643955500000004,
           "messages": 111
         },
         {
           "client": "claude",
-          "modelId": "claude-haiku-4-5",
+          "modelId": "claude-sonnet-5",
           "providerId": "anthropic",
           "tokens": {
-            "input": 306436,
-            "output": 186473,
-            "cacheRead": 34087759,
-            "cacheWrite": 820592,
+            "input": 287601,
+            "output": 623185,
+            "cacheRead": 249459169,
+            "cacheWrite": 2487393,
             "reasoning": 0
           },
-          "cost": 5.6733169000000006,
-          "messages": 385
+          "cost": 62.9173683,
+          "messages": 534
         },
         {
           "client": "codex",
@@ -2664,18 +2622,93 @@
             "cacheWrite": 0,
             "reasoning": 60588
           },
-          "cost": 3.5615299999999994,
+          "cost": 3.56153,
           "messages": 142
+        },
+        {
+          "client": "claude",
+          "modelId": "claude-haiku-4-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 306436,
+            "output": 186473,
+            "cacheRead": 34087759,
+            "cacheWrite": 820592,
+            "reasoning": 0
+          },
+          "cost": 5.6733169,
+          "messages": 385
         }
       ],
-      "activeTimeMs": 19608287
+      "activeTimeMs": 19612295
+    },
+    {
+      "date": "2026-08-10",
+      "totals": {
+        "tokens": 54298080,
+        "cost": 8.57947518,
+        "messages": 404
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1007613,
+        "output": 231784,
+        "cacheRead": 52770528,
+        "cacheWrite": 239176,
+        "reasoning": 48979
+      },
+      "clients": [
+        {
+          "client": "claude",
+          "modelId": "claude-sonnet-5",
+          "providerId": "anthropic",
+          "tokens": {
+            "input": 43603,
+            "output": 136825,
+            "cacheRead": 28956384,
+            "cacheWrite": 239176,
+            "reasoning": 0
+          },
+          "cost": 7.8446728,
+          "messages": 155
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-luna",
+          "providerId": "openai",
+          "tokens": {
+            "input": 826463,
+            "output": 84716,
+            "cacheRead": 22699008,
+            "cacheWrite": 0,
+            "reasoning": 42603
+          },
+          "cost": 0.38602777999999993,
+          "messages": 229
+        },
+        {
+          "client": "codex",
+          "modelId": "gpt-5.6-terra",
+          "providerId": "openai",
+          "tokens": {
+            "input": 137547,
+            "output": 10243,
+            "cacheRead": 1115136,
+            "cacheWrite": 0,
+            "reasoning": 6376
+          },
+          "cost": 0.3487746,
+          "messages": 20
+        }
+      ],
+      "activeTimeMs": 6979011
     }
   ],
   "timeMetrics": {
-    "totalActiveTimeMs": 511094953,
+    "totalActiveTimeMs": 506546799,
     "longestContinuousMs": 85173007,
     "maxConcurrentSessions": 4,
-    "sessionCount": 1139
+    "sessionCount": 1112
   },
   "mcpServers": [
     "codebase-memory-mcp"
